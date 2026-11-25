@@ -77,7 +77,8 @@ ul{list-style:none;padding:0;margin:0}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--emerald-dim);border:1px solid rgba(16,185,129,.35);padding:5px 16px;border-radius:30px;font-size:12.5px;font-weight:600;color:var(--emerald);margin-bottom:14px;animation:fadeInUp .8s ease both}
 .hero-badge-dot{width:8px;height:8px;border-radius:50%;background:var(--emerald);animation:pulse 2s ease infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
-.hero-title{font-size:clamp(38px,5.6vw,68px);font-weight:900;line-height:1.05;letter-spacing:-2px;animation:fadeInUp .8s .15s ease both}
+.hero-title{font-size:clamp(32px,5.2vw,66px);font-weight:900;line-height:1.1;letter-spacing:-1.5px;white-space:nowrap;animation:fadeInUp .8s .15s ease both}
+@media(max-width:480px){.hero-title{white-space:normal}}
 .hero-line{display:block}
 .hero-line--accent{background:linear-gradient(135deg,var(--cyan),var(--violet),var(--emerald));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:clamp(16px,2vw,21px);color:var(--text-dim);font-weight:500;margin-top:8px;letter-spacing:.8px;animation:fadeInUp .8s .3s ease both}
