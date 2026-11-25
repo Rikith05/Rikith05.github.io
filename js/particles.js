@@ -24,8 +24,9 @@
 
   function resize() {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
-    W = canvas.offsetWidth || window.innerWidth;
-    H = canvas.offsetHeight || window.innerHeight;
+    const parent = canvas.parentElement;
+    W = (parent && parent.clientWidth) || canvas.clientWidth || window.innerWidth;
+    H = (parent && parent.clientHeight) || canvas.clientHeight || window.innerHeight;
     canvas.width = Math.floor(W * dpr);
     canvas.height = Math.floor(H * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
