@@ -47,6 +47,7 @@
   sections.forEach(s => observer.observe(s));
 
   /* ── Scroll Reveal ── */
+  const revealTargets = document.querySelectorAll('[data-reveal], .project-card, .skill-category');
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -54,9 +55,13 @@
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('[data-reveal], .project-card, .skill-category').forEach(el => {
-    revealObserver.observe(el);
+  }, { threshold: 0.02, rootMargin: '80px 0px 80px 0px' });
+  revealTargets.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight + 120) {
+      el.classList.add('visible');
+    } else {
+      revealObserver.observe(el);
+    }
   });
 
   /* ── Animated Counters ── */
