@@ -20,7 +20,7 @@
   const NODE_COUNT = 52;
   const EDGE_DIST = 160;
   const MOUSE_DIST = 200;
-  const COLORS = ['#22D3EE', '#8B5CF6', '#10B981', '#F59E0B', '#38BDF8'];
+  const COLORS = ['#0E7490', '#6D28D9', '#B08D57', '#047857', '#1B2735'];
 
   function resize() {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -56,11 +56,11 @@
         const dy = nodes[i].y - nodes[j].y;
         const d = Math.hypot(dx, dy);
         if (d < EDGE_DIST) {
-          const alpha = (1 - d / EDGE_DIST) * 0.18;
+          const alpha = (1 - d / EDGE_DIST) * 0.22;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = `rgba(34,211,238,${alpha})`;
+          ctx.strokeStyle = `rgba(14,116,144,${alpha})`;
           ctx.lineWidth = 0.7;
           ctx.stroke();
         }

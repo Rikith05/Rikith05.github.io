@@ -126,39 +126,39 @@
   if (dagContainer) {
     dagContainer.innerHTML = `
     <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SwarmForge Council and Judge DAG">
-      <g stroke-width="1.5" stroke-dasharray="6 4" opacity=".55">
-        <line x1="200" y1="40" x2="80"  y2="130" stroke="#22D3EE"/>
-        <line x1="200" y1="40" x2="200" y2="130" stroke="#22D3EE"/>
-        <line x1="200" y1="40" x2="320" y2="130" stroke="#22D3EE"/>
-        <line x1="80"  y1="130" x2="200" y2="220" stroke="#8B5CF6"/>
-        <line x1="200" y1="130" x2="200" y2="220" stroke="#8B5CF6"/>
-        <line x1="320" y1="130" x2="200" y2="220" stroke="#8B5CF6"/>
-        <line x1="200" y1="220" x2="200" y2="290" stroke="#10B981"/>
+      <g stroke-width="1.5" stroke-dasharray="6 4" opacity=".65">
+        <line x1="200" y1="40" x2="80"  y2="130" stroke="#0E7490"/>
+        <line x1="200" y1="40" x2="200" y2="130" stroke="#0E7490"/>
+        <line x1="200" y1="40" x2="320" y2="130" stroke="#0E7490"/>
+        <line x1="80"  y1="130" x2="200" y2="220" stroke="#6D28D9"/>
+        <line x1="200" y1="130" x2="200" y2="220" stroke="#6D28D9"/>
+        <line x1="320" y1="130" x2="200" y2="220" stroke="#6D28D9"/>
+        <line x1="200" y1="220" x2="200" y2="290" stroke="#047857"/>
       </g>
-      <g stroke-width="1" stroke-dasharray="3 3" opacity=".4">
-        <line x1="80"  y1="130" x2="360" y2="175" stroke="#F59E0B"/>
-        <line x1="200" y1="130" x2="360" y2="175" stroke="#F59E0B"/>
-        <line x1="320" y1="130" x2="360" y2="175" stroke="#F59E0B"/>
+      <g stroke-width="1.2" stroke-dasharray="3 3" opacity=".55">
+        <line x1="80"  y1="130" x2="360" y2="175" stroke="#B45309"/>
+        <line x1="200" y1="130" x2="360" y2="175" stroke="#B45309"/>
+        <line x1="320" y1="130" x2="360" y2="175" stroke="#B45309"/>
       </g>
       <g>
-        <circle cx="200" cy="40" r="22" fill="#0B1325" stroke="#22D3EE" stroke-width="2">
+        <circle cx="200" cy="40" r="22" fill="#FFFFFF" stroke="#0E7490" stroke-width="2">
           <animate attributeName="r" values="22;24;22" dur="3s" repeatCount="indefinite"/>
         </circle>
-        <text x="200" y="45" text-anchor="middle" fill="#22D3EE" font-size="11" font-weight="700" font-family="Inter,sans-serif">PLAN</text>
-        <circle cx="80" cy="130" r="20" fill="#0B1325" stroke="#8B5CF6" stroke-width="2"/>
-        <text x="80" y="134" text-anchor="middle" fill="#8B5CF6" font-size="9" font-weight="600" font-family="Inter,sans-serif">AST</text>
-        <circle cx="200" cy="130" r="20" fill="#0B1325" stroke="#F43F5E" stroke-width="2"/>
-        <text x="200" y="134" text-anchor="middle" fill="#F43F5E" font-size="9" font-weight="600" font-family="Inter,sans-serif">RED</text>
-        <circle cx="320" cy="130" r="20" fill="#0B1325" stroke="#F59E0B" stroke-width="2"/>
-        <text x="320" y="134" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="600" font-family="Inter,sans-serif">FIX</text>
-        <rect x="340" y="160" width="50" height="30" rx="6" fill="#0B1325" stroke="#F59E0B" stroke-width="1.5"/>
-        <text x="365" y="179" text-anchor="middle" fill="#F59E0B" font-size="8" font-weight="600" font-family="Inter,sans-serif">FW</text>
-        <circle cx="200" cy="220" r="20" fill="#0B1325" stroke="#10B981" stroke-width="2"/>
-        <text x="200" y="225" text-anchor="middle" fill="#10B981" font-size="9" font-weight="600" font-family="Inter,sans-serif">JUDGE</text>
-        <rect x="175" y="274" width="50" height="28" rx="6" fill="#10B981" fill-opacity=".15" stroke="#10B981" stroke-width="1.5"/>
-        <text x="200" y="293" text-anchor="middle" fill="#10B981" font-size="9" font-weight="600" font-family="Inter,sans-serif">PASS</text>
+        <text x="200" y="45" text-anchor="middle" fill="#0E7490" font-size="11" font-weight="700" font-family="Inter,sans-serif">PLAN</text>
+        <circle cx="80" cy="130" r="20" fill="#FFFFFF" stroke="#6D28D9" stroke-width="2"/>
+        <text x="80" y="134" text-anchor="middle" fill="#6D28D9" font-size="9" font-weight="700" font-family="Inter,sans-serif">AST</text>
+        <circle cx="200" cy="130" r="20" fill="#FFFFFF" stroke="#BE123C" stroke-width="2"/>
+        <text x="200" y="134" text-anchor="middle" fill="#BE123C" font-size="9" font-weight="700" font-family="Inter,sans-serif">RED</text>
+        <circle cx="320" cy="130" r="20" fill="#FFFFFF" stroke="#B45309" stroke-width="2"/>
+        <text x="320" y="134" text-anchor="middle" fill="#B45309" font-size="9" font-weight="700" font-family="Inter,sans-serif">FIX</text>
+        <rect x="340" y="160" width="50" height="30" rx="6" fill="#FFFFFF" stroke="#B45309" stroke-width="1.5"/>
+        <text x="365" y="179" text-anchor="middle" fill="#B45309" font-size="8" font-weight="700" font-family="Inter,sans-serif">FW</text>
+        <circle cx="200" cy="220" r="20" fill="#FFFFFF" stroke="#047857" stroke-width="2"/>
+        <text x="200" y="225" text-anchor="middle" fill="#047857" font-size="9" font-weight="700" font-family="Inter,sans-serif">JUDGE</text>
+        <rect x="175" y="274" width="50" height="28" rx="6" fill="#047857" fill-opacity=".12" stroke="#047857" stroke-width="1.5"/>
+        <text x="200" y="293" text-anchor="middle" fill="#047857" font-size="9" font-weight="700" font-family="Inter,sans-serif">PASS</text>
       </g>
-      <text x="200" y="15" text-anchor="middle" fill="#64748B" font-size="10" font-family="Inter,sans-serif" letter-spacing="2">SwarmForge Council+Judge DAG</text>
+      <text x="200" y="15" text-anchor="middle" fill="#475569" font-size="10" font-family="Inter,sans-serif" letter-spacing="2">SwarmForge Council+Judge DAG</text>
     </svg>`;
   }
 
