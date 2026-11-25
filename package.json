@@ -1,0 +1,21 @@
+{
+  "name": "rikith05-ai-agent-portfolio",
+  "version": "1.0.0",
+  "description": "Rikith Madimala — AI & Multi-Agent Systems Engineering Portfolio with live RAG Concierge, JD Fit Auditor, Policy Firewall Playground, and automated GitHub telemetry sync.",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync_github_profile.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "verify": "node scripts/verify_portfolio.mjs",
+    "serve": "node scripts/dev_server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rikith05/Rikith05.github.io.git"
+  },
+  "author": "Rikith Madimala <rikithmadimala05@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
