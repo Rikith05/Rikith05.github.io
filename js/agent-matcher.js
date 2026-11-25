@@ -48,11 +48,11 @@
     },
     {
       id: 'sports-pose',
-      title: 'Sports Pose Metrics (Real-Time Biomechanical CV)',
+      title: 'Sports Pose Metrics & Helmet Violation CV Systems',
       type: 'Computer Vision',
       url: 'https://github.com/Rikith05/sports-pose-metrics',
-      keywords: ['computer vision', 'mediapipe', 'opencv', 'pose', 'biomechanics', 'streamlit', 'python', 'real-time', 'video', 'numpy'],
-      summary: 'Real-time CPU pose estimation tracking 33 body landmarks via MediaPipe Pose Landmarker, computing torso lean, elbow/knee angles, and wrist speed with live form feedback.'
+      keywords: ['computer vision', 'mediapipe', 'opencv', 'yolov8', 'yolo', 'easyocr', 'twilio', 'pose', 'biomechanics', 'streamlit', 'python', 'real-time', 'video', 'numpy'],
+      summary: 'Real-time CPU pose estimation tracking 33 body landmarks via MediaPipe Pose Landmarker, plus YOLOv8 + OpenCV + EasyOCR helmet violation & crowd detection systems with Twilio SMS alerts.'
     },
     {
       id: 'telangana-rag',
@@ -61,6 +61,14 @@
       url: '#projects',
       keywords: ['rag', 'faiss', 'langchain', 'gemma', 'streamlit', 'vector', 'retrieval', 'embeddings', 'document'],
       summary: 'LangChain + FAISS + Gemma 3 RAG assistant for government scheme eligibility retrieval, alongside a fine-tuned Gemma 3 (270M) dynamic resume-to-JD interview question generator.'
+    },
+    {
+      id: 'education-certs',
+      title: 'Education, Certifications & Leadership (SNIST B.Tech 8.12 CGPA)',
+      type: 'Academic & Leadership',
+      url: '#education',
+      keywords: ['education', 'degree', 'btech', 'b.tech', 'snist', 'cgpa', 'diploma', 'studies', 'college', 'certification', 'cisco', 'ibm', 'power bi', 'nss', 'club', 'leadership'],
+      summary: 'B.Tech CSE (Data Science) at SNIST Hyderabad (CGPA 8.12, 2023–2026), Diploma in Computer Engineering (CGPA 7.93), SSC (9.7 CGPA); Documentation Head at Data Science Club (SNIST), NSS Volunteer; Cisco/IBM/Power BI certified.'
     },
     {
       id: 'csir-data',
@@ -124,14 +132,17 @@
       .sort((a, b) => b.relevance - a.relevance);
 
     const topMatches = scored.slice(0, 4);
+    const meanRel = topMatches.length
+      ? topMatches.reduce((s, m) => s + m.relevance, 0) / topMatches.length
+      : 0;
     const avgScore = topMatches.length
-      ? Math.min(98, Math.round(topMatches.reduce((s, m) => s + m.relevance, 0) / topMatches.length + 12))
+      ? Math.min(98, Math.round(topMatches[0].relevance * 0.65 + meanRel * 0.35 + 8))
       : 42;
 
     const trace = [
       { step: '1. Intent & Requirement Parser', status: 'pass', detail: `Extracted ${tokens.length} signal tokens from input` },
       { step: '2. Grounded Knowledge Retriever', status: 'pass', detail: `Ranked ${KNOWLEDGE_CHUNKS.length} verified artifacts -> ${topMatches.length} high-signal hits` },
-      { step: '3. Hallucination & Citation Gate', status: topMatches.length ? 'pass' : 'warn', detail: topMatches.length ? 'All claims bound to verified GitHub repos & internships' : 'Low overlap — showing closest AI baseline' }
+      { step: '3. Hallucination & Citation Gate', status: topMatches.length ? 'pass' : 'warn', detail: topMatches.length ? 'All claims bound to verified GitHub repos, studies & internships' : 'Low overlap — showing closest AI baseline' }
     ];
 
     const brief = [

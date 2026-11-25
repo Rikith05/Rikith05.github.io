@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rikith Madimala — AI &amp; Multi-Agent Systems Engineer</title>
   <meta name="description" content="Portfolio of Rikith Madimala: multi-agent DAG orchestration, 5-layer tool policy firewalls, RAG pipelines, computer vision, and full-stack AI systems." />
+  <link rel="canonical" href="https://rikith05.github.io/" />
   <meta property="og:title" content="Rikith Madimala — AI & Multi-Agent Systems Engineer" />
   <meta property="og:description" content="Multi-Agent DAGs · Policy Firewalls · RAG · LLM Eval · Computer Vision" />
   <meta property="og:image" content="https://rikith05.github.io/assets/og-card.svg" />
-  <meta property="og:url" content="https://rikith05.github.io" />
+  <meta property="og:url" content="https://rikith05.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,67 +18,69 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <!-- ═══════════════ LOADER ═══════════════ -->
-  <div id="loader" class="loader" aria-hidden="true">
-    <div class="loader-ring"></div>
-    <p class="loader-text">Initializing Agent Graph…</p>
-  </div>
+  <a href="#about" class="skip-link">Skip to content</a>
 
   <!-- ═══════════════ NAV ═══════════════ -->
   <nav class="nav" id="nav">
-    <a href="#hero" class="nav-brand">
-      <svg viewBox="0 0 28 28" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+    <a href="./" class="nav-brand" id="nav-brand" aria-label="Rikith Madimala Home">
+      <svg viewBox="0 0 28 28" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <circle cx="14" cy="4" r="2.5"/><circle cx="4" cy="14" r="2.5"/><circle cx="24" cy="14" r="2.5"/><circle cx="14" cy="24" r="2.5"/>
         <path d="M12 6 6 12M16 6l6 6M6 16l6 6M22 16l-6 6" stroke-opacity=".6"/>
       </svg>
       <span>RM</span>
     </a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
       <a href="#about" class="nav-link">About</a>
       <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Studies</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#playground" class="nav-link">Agent Lab</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
-    <a href="https://github.com/Rikith05" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub">
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
-    </a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <button class="cmd-trigger" id="cmd-trigger" type="button" title="Command Palette (Ctrl+K)">
+        <span>⌘K</span>
+      </button>
+      <a href="https://github.com/Rikith05" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- ═══════════════ HERO ═══════════════ -->
-  <section id="hero" class="hero">
+  <header class="hero">
     <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
     <div class="hero-content">
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
-        <span>Open to Opportunities</span>
+        <span>Open to AI &amp; Agent Engineering Roles</span>
       </div>
       <h1 class="hero-title">
         <span class="hero-line">Rikith</span>
         <span class="hero-line hero-line--accent">Madimala</span>
       </h1>
       <p class="hero-sub">AI &amp; Multi-Agent Systems Engineer</p>
-      <p class="hero-desc">I build <em>autonomous agent orchestrators</em>, <em>safety firewalls</em>, and <em>intelligent pipelines</em> that turn chaotic AI tool calls into reliable, auditable production systems.</p>
+      <p class="hero-desc">I build <em>autonomous agent orchestrators</em>, <em>safety firewalls</em>, and <em>intelligent RAG &amp; vision pipelines</em> that turn chaotic AI tool calls into reliable, auditable production systems.</p>
       <div class="hero-stats" id="hero-stats">
         <div class="stat">
-          <span class="stat-num" data-count="15">0</span>
+          <span class="stat-num" id="stat-repos" data-count="16">16</span>
           <span class="stat-label">Public Repos</span>
         </div>
         <div class="stat">
-          <span class="stat-num" data-count="7">0</span>
-          <span class="stat-label">AI / Agent Projects</span>
+          <span class="stat-num" data-count="8">8</span>
+          <span class="stat-label">AI / Agent Systems</span>
         </div>
         <div class="stat">
-          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-num" data-count="5">5</span>
           <span class="stat-label">Layer Firewall</span>
         </div>
         <div class="stat">
-          <span class="stat-num" data-count="100">0</span>
-          <span class="stat-label">% Pass Rate</span>
+          <span class="stat-num" data-count="100">100</span>
+          <span class="stat-label">% Eval Pass Rate</span>
         </div>
       </div>
       <div class="hero-actions">
@@ -86,16 +89,19 @@
           <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor"><path d="M10 3a1 1 0 0 1 .71.29l5 5a1 1 0 0 1 0 1.42l-5 5a1 1 0 1 1-1.42-1.42L12.59 10H4a1 1 0 1 1 0-2h8.59l-3.3-3.29A1 1 0 0 1 10 3z"/></svg>
         </a>
         <a href="#playground" class="btn btn-ghost">
-          <span>Try Live Playground</span>
+          <span>Try Live Agent Lab</span>
           <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor"><path d="M6 4l10 6-10 6V4z"/></svg>
         </a>
+        <button type="button" id="print-dossier" class="btn btn-ghost">
+          <span>Print / Save Dossier</span>
+        </button>
       </div>
     </div>
     <div class="hero-scroll" aria-hidden="true">
       <div class="hero-scroll-line"></div>
       <span>scroll</span>
     </div>
-  </section>
+  </header>
 
   <!-- ═══════════════ ABOUT ═══════════════ -->
   <section id="about" class="section about">
@@ -107,10 +113,10 @@
       </div>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a <strong>Data Analyst &amp; AI Engineer</strong> from Hyderabad, India, deeply focused on building <strong>multi-agent AI systems</strong> that are safe, observable, and production-grade.</p>
+          <p>I'm a <strong>Data Science graduate &amp; AI Engineer</strong> from Hyderabad, India, focused on building <strong>multi-agent AI systems</strong> that are safe, observable, and production-grade.</p>
           <p>My flagship project, <strong>SwarmForge</strong>, is an autonomous multi-agent DAG orchestrator with a 5-layer tool policy firewall that prevents hallucinated tool calls, prompt-injection escalation, credential leaks, and unbounded retry storms — achieving <strong>100% pass rate</strong> under strict policy benchmarks.</p>
-          <p>I combine strong fundamentals in <strong>Java, Python, Spring Boot, and full-stack development</strong> with deep expertise in <strong>LangChain, RAG pipelines, CrewAI multi-agent frameworks, computer vision (YOLOv8/MediaPipe)</strong>, and <strong>LLM evaluation</strong>.</p>
-          <p>Currently exploring opportunities where I can apply agentic AI engineering to solve hard, real-world problems at scale.</p>
+          <p>Across internships at <strong>Ethara.ai</strong>, <strong>TensorGo</strong>, and <strong>CSIR-CSMCRI</strong>, I've worked on LLM post-training alignment, Gemma 3 fine-tuning, RAG pipelines, n8n workflow automation, and real-time computer vision.</p>
+          <p>I combine strong fundamentals in <strong>Python, Java, Spring Boot, and FastAPI</strong> with hands-on execution in <strong>LangChain, CrewAI, FAISS, Qdrant, YOLOv8, and MediaPipe</strong>.</p>
         </div>
         <div class="about-terminal">
           <div class="terminal">
@@ -122,14 +128,14 @@
             </div>
             <div class="terminal-body" id="terminal-body">
               <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></div>
-              <div class="term-line term-output">Rikith Madimala — AI & Multi-Agent Systems Engineer</div>
+              <div class="term-line term-output">Rikith Madimala — AI &amp; Multi-Agent Systems Engineer</div>
               <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat focus.yml</span></div>
               <div class="term-line term-output">domains:</div>
               <div class="term-line term-output">  - Multi-Agent DAG Orchestration</div>
-              <div class="term-line term-output">  - Tool Policy Firewalls & Guardrails</div>
-              <div class="term-line term-output">  - RAG Pipelines & LLM Evaluation</div>
+              <div class="term-line term-output">  - Tool Policy Firewalls &amp; Guardrails</div>
+              <div class="term-line term-output">  - RAG Pipelines &amp; LLM Evaluation</div>
               <div class="term-line term-output">  - Computer Vision (YOLOv8 / MediaPipe)</div>
-              <div class="term-line term-output">  - Full-Stack (Spring Boot / MERN)</div>
+              <div class="term-line term-output">  - Full-Stack (Spring Boot / FastAPI)</div>
               <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">swarmforge eval --policy strict</span></div>
               <div class="term-line term-output term-success">✓ council_judge: 100% pass | score 100.0 | 4 self-heals</div>
               <div class="term-line"><span class="term-prompt">$</span> <span class="term-cursor">█</span></div>
@@ -144,7 +150,7 @@
   <section id="experience" class="section experience">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">01B</span>
+        <span class="section-tag">02</span>
         <h2 class="section-title">Experience &amp; Hackathons</h2>
         <div class="section-line"></div>
       </div>
@@ -169,9 +175,80 @@
         </div>
         <div class="timeline-item" data-reveal>
           <div class="timeline-dot"></div>
+          <div class="timeline-meta">Apr 2024 – Dec 2024 · Training &amp; Internships</div>
+          <h3>Industrial Trainee (<span class="text-cyan">Intrainz</span>) &amp; Data Science Intern (<span class="text-cyan">Altair</span>)</h3>
+          <p>Built data preprocessing, visualization, and predictive ML pipelines in Python using Pandas and Scikit-learn across real-world datasets.</p>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
           <div class="timeline-meta">Jul 2025 &amp; Oct 2025 · Competitions</div>
           <h3>TensorGo AI Hackathon &amp; HackWithHyderabad</h3>
           <p>Selected among top 7 students college-wide at TensorGo AI Hackathon (built real-time crowd detection &amp; alert system, converting to internship offer); competed at Microsoft Office Hyderabad for HackWithHyderabad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EDUCATION & LEADERSHIP ═══════════════ -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Studies, Certifications &amp; Leadership</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-layout">
+        <div class="edu-column">
+          <h3 class="edu-col-title">Academic Background</h3>
+          <div class="edu-card" data-reveal>
+            <div class="edu-head">
+              <span class="edu-degree">B.Tech in CSE (Data Science)</span>
+              <span class="edu-badge">CGPA 8.12</span>
+            </div>
+            <div class="edu-school">Sreenidhi Institute of Science and Technology (SNIST), Hyderabad</div>
+            <div class="edu-year">2023 – 2026</div>
+          </div>
+          <div class="edu-card" data-reveal>
+            <div class="edu-head">
+              <span class="edu-degree">Diploma in Computer Engineering</span>
+              <span class="edu-badge">CGPA 7.93</span>
+            </div>
+            <div class="edu-school">Bomma Institute of Science and Technology, Khammam</div>
+            <div class="edu-year">2020 – 2023</div>
+          </div>
+          <div class="edu-card" data-reveal>
+            <div class="edu-head">
+              <span class="edu-degree">Class X (SSC)</span>
+              <span class="edu-badge">CGPA 9.7</span>
+            </div>
+            <div class="edu-school">ZPHS Kodumuru</div>
+            <div class="edu-year">2020</div>
+          </div>
+        </div>
+
+        <div class="edu-column">
+          <h3 class="edu-col-title">Certifications &amp; Campus Leadership</h3>
+          <div class="edu-card" data-reveal>
+            <div class="edu-head">
+              <span class="edu-degree">Documentation Head — Data Science Club (THE INFINITIX CLUB)</span>
+              <span class="edu-badge edu-badge--violet">SNIST</span>
+            </div>
+            <p class="edu-desc">Led technical documentation for AI/ML workshops, hackathons, and student engineering initiatives (Feb 2025 – Apr 2026).</p>
+          </div>
+          <div class="edu-card" data-reveal>
+            <div class="edu-head">
+              <span class="edu-degree">Volunteer — National Service Scheme (NSS)</span>
+              <span class="edu-badge edu-badge--emerald">2023 – 2026</span>
+            </div>
+            <p class="edu-desc">Organized community awareness drives, social outreach programs, and campus event coordination.</p>
+          </div>
+          <div class="cert-list" data-reveal>
+            <div class="cert-pill">Cisco · Data Analysis Essentials</div>
+            <div class="cert-pill">IBM · Intro to Data Analytics</div>
+            <div class="cert-pill">IBM · Excel Basics for Analysis</div>
+            <div class="cert-pill">Microsoft · Preparing Data for Analysis</div>
+            <div class="cert-pill">Simplilearn · Power BI for Beginners</div>
+          </div>
         </div>
       </div>
     </div>
@@ -181,18 +258,24 @@
   <section id="projects" class="section projects">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">02</span>
-        <h2 class="section-title">Featured Projects</h2>
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Featured AI &amp; Engineering Systems</h2>
         <div class="section-line"></div>
       </div>
-      <p class="section-desc">Each project demonstrates a different layer of AI engineering — from safety-critical agent orchestration to agentic pharma discovery and real-time pose estimation.</p>
+      <p class="section-desc">Filter by engineering domain — from safety-critical multi-agent orchestration and RAG pipelines to real-time computer vision and workflow automation.</p>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects by domain">
+        <button class="filter-btn active" data-filter="all">All Systems</button>
+        <button class="filter-btn" data-filter="agents">AI Agents &amp; Guardrails</button>
+        <button class="filter-btn" data-filter="rag">RAG &amp; LLMs</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack &amp; Automation</button>
+      </div>
 
       <!-- PROJECT 1: SwarmForge -->
-      <article class="project-card project-card--featured" data-reveal>
+      <article class="project-card project-card--featured" data-category="agents" data-reveal>
         <div class="project-visual">
-          <div class="project-dag" id="dag-visual">
-            <!-- Filled by JS: animated SVG DAG -->
-          </div>
+          <div class="project-dag" id="dag-visual"></div>
         </div>
         <div class="project-info">
           <div class="project-tags">
@@ -212,16 +295,13 @@
             <span>Python</span><span>FastAPI</span><span>SSE</span><span>SQLite</span><span>AST Analysis</span><span>Docker</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rikith05/swarmforge" target="_blank" class="btn btn-sm">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
-              Source Code
-            </a>
+            <a href="https://github.com/Rikith05/swarmforge" target="_blank" rel="noopener" class="btn btn-sm">Source Code</a>
           </div>
         </div>
       </article>
 
       <!-- PROJECT 2: Pharma AI -->
-      <article class="project-card" data-reveal>
+      <article class="project-card" data-category="agents rag" data-reveal>
         <div class="project-info">
           <div class="project-tags">
             <span class="tag tag--violet">Agentic AI</span>
@@ -229,26 +309,23 @@
             <span class="tag tag--cyan">7 Specialist Agents</span>
           </div>
           <h3 class="project-name">Pharma AI Innovation Platform</h3>
-          <p class="project-desc">Agentic AI solution with 7 specialist worker agents (IQVIA, Clinical Trials, Patent, EXIM, Knowledge, Web Intelligence, Report Generator) orchestrated by a Master Agent to accelerate pharmaceutical innovation discovery — reducing research time from 2–3 months to 3–5 minutes.</p>
+          <p class="project-desc">Agentic AI solution with 7 specialist worker agents (IQVIA, Clinical Trials, Patent, EXIM, Knowledge, Web Intelligence, Report Generator) orchestrated by a Master Agent — reducing research time from 2–3 months to 3–5 minutes.</p>
           <ul class="project-highlights">
             <li><strong>Master Agent</strong> decomposes natural-language pharma queries into parallel sub-tasks</li>
-            <li><strong>7 Worker Agents</strong> each specializing in a different data domain (market, clinical, patent, trade, literature)</li>
+            <li><strong>7 Worker Agents</strong> specializing in market, clinical, patent, trade, and literature intelligence</li>
             <li><strong>Multi-source synthesis</strong> produces strategic innovation reports with actionable recommendations</li>
           </ul>
           <div class="project-stack">
             <span>Python</span><span>CrewAI</span><span>OpenAI</span><span>Streamlit</span><span>LangChain</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rikith05/pharmaceutical-ai-innovation-platform" target="_blank" class="btn btn-sm">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
-              Source Code
-            </a>
+            <a href="https://github.com/Rikith05/pharmaceutical-ai-innovation-platform" target="_blank" rel="noopener" class="btn btn-sm">Source Code</a>
           </div>
         </div>
       </article>
 
       <!-- PROJECT 3: Sports Pose Metrics -->
-      <article class="project-card" data-reveal>
+      <article class="project-card" data-category="cv" data-reveal>
         <div class="project-info">
           <div class="project-tags">
             <span class="tag tag--emerald">Computer Vision</span>
@@ -256,7 +333,7 @@
             <span class="tag tag--amber">Real-Time</span>
           </div>
           <h3 class="project-name">Sports Pose Metrics</h3>
-          <p class="project-desc">Real-time and batch pose estimation for sports videos using MediaPipe Pose Landmarker — computes torso lean, elbow/knee angles, and wrist speed with live "perfect/not-perfect" form feedback via webcam or uploaded video.</p>
+          <p class="project-desc">Real-time and batch pose estimation for sports videos using MediaPipe Pose Landmarker — computes torso lean, elbow/knee angles, and wrist speed with live form feedback via webcam or uploaded video.</p>
           <ul class="project-highlights">
             <li><strong>33 Body Landmarks</strong> tracked in real-time on CPU (no GPU required)</li>
             <li><strong>5 Kinematic Metrics:</strong> Torso lean, elbow angles, knee angles, wrist speed, symmetry ratio</li>
@@ -266,66 +343,61 @@
             <span>Python</span><span>MediaPipe</span><span>OpenCV</span><span>Streamlit</span><span>NumPy</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rikith05/sports-pose-metrics" target="_blank" class="btn btn-sm">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
-              Source Code
-            </a>
+            <a href="https://github.com/Rikith05/sports-pose-metrics" target="_blank" rel="noopener" class="btn btn-sm">Source Code</a>
           </div>
         </div>
       </article>
 
       <!-- PROJECT 4: Interview Experience Portal -->
-      <article class="project-card" data-reveal>
+      <article class="project-card" data-category="rag fullstack" data-reveal>
         <div class="project-info">
           <div class="project-tags">
             <span class="tag tag--amber">Full-Stack</span>
-            <span class="tag tag--violet">LLM-Powered</span>
+            <span class="tag tag--violet">Ollama LLaMA 3.2</span>
             <span class="tag tag--emerald">Java / Spring</span>
           </div>
           <h3 class="project-name">Interview Experience Portal</h3>
-          <p class="project-desc">Full-stack career preparation platform with AI-powered mock interviews (Ollama/LLaMA), an AI question generator, resume builder, credit-based Razorpay payments, OTP auth, and a complete admin dashboard.</p>
-          <ul class="project-highlights">
-            <li><strong>AI Mock Interviews</strong> with real-time LLM evaluation via local Ollama</li>
-            <li><strong>Credit System</strong> with Razorpay payment gateway integration</li>
-            <li><strong>Full Admin Dashboard:</strong> User moderation, revenue reports, content management</li>
-          </ul>
+          <p class="project-desc">Full-stack career preparation platform with AI-powered mock interviews (Ollama/LLaMA 3.2), an AI question generator, resume builder, credit-based Razorpay payments, OTP auth, and a complete admin dashboard.</p>
           <div class="project-stack">
             <span>Java 17</span><span>Spring 6</span><span>MySQL</span><span>Ollama</span><span>Razorpay</span><span>JSP</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Rikith05/interview-experience-portal" target="_blank" class="btn btn-sm">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
-              Source Code
-            </a>
+            <a href="https://github.com/Rikith05/interview-experience-portal" target="_blank" rel="noopener" class="btn btn-sm">Source Code</a>
           </div>
         </div>
       </article>
 
-      <!-- PROJECT 5: PurohitMitra -->
-      <article class="project-card" data-reveal>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag tag--cyan">Web Platform</span>
-            <span class="tag tag--amber">40 Pages</span>
-            <span class="tag tag--emerald">Booking System</span>
-          </div>
-          <h3 class="project-name">PurohitMitra</h3>
-          <p class="project-desc">Complete web platform connecting devotees with verified Vedic Purohits — featuring dual-flow architecture (14 public + 26 authenticated pages), in-portal booking, payment processing, and HD ritual photography.</p>
-          <div class="project-stack">
-            <span>HTML/CSS/JS</span><span>Responsive</span><span>40 Pages</span><span>Booking Flow</span>
-          </div>
+      <!-- PROJECT 5: Compact Grid of Additional Verified AI/CV/Automation Systems -->
+      <div class="mini-projects-grid">
+        <article class="project-card project-card--mini" data-category="cv" data-reveal>
+          <div class="project-tags"><span class="tag tag--emerald">Computer Vision</span><span class="tag tag--amber">YOLOv8 + OCR</span></div>
+          <h3 class="project-name">Helmet Violation Detection</h3>
+          <p class="project-desc">Real-time YOLOv8 + OpenCV + EasyOCR pipeline detecting rider helmet violations, extracting license plates, logging to Excel, and sending automated Twilio SMS alerts.</p>
+          <div class="project-stack"><span>YOLOv8</span><span>OpenCV</span><span>EasyOCR</span><span>Twilio</span><span>Streamlit</span></div>
+        </article>
+
+        <article class="project-card project-card--mini" data-category="rag" data-reveal>
+          <div class="project-tags"><span class="tag tag--violet">RAG</span><span class="tag tag--cyan">Gemma 3 + FAISS</span></div>
+          <h3 class="project-name">Telangana Schemes RAG &amp; Resume Q-Gen</h3>
+          <p class="project-desc">LangChain + FAISS + Gemma 3 assistant for government scheme eligibility retrieval, plus a fine-tuned Gemma 3 (270M) adaptive resume-to-JD interview generator.</p>
+          <div class="project-stack"><span>Gemma 3</span><span>LangChain</span><span>FAISS</span><span>Streamlit</span></div>
+        </article>
+
+        <article class="project-card project-card--mini" data-category="fullstack" data-reveal>
+          <div class="project-tags"><span class="tag tag--cyan">Automation</span><span class="tag tag--amber">n8n + OR-Tools</span></div>
+          <h3 class="project-name">n8n Weather &amp; IPL Simulator</h3>
+          <p class="project-desc">Scheduled n8n OpenWeatherMap-to-SMTP workflow plus an interactive Google OR-Tools IPL playoff constraint optimizer &amp; PurohitMitra 40-page booking platform.</p>
+          <div class="project-stack"><span>n8n</span><span>OR-Tools</span><span>Plotly</span><span>HTML/JS</span></div>
           <div class="project-links">
-            <a href="https://github.com/Rikith05/purohitmitra" target="_blank" class="btn btn-sm">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 20.98c-3.34.73-4.04-1.61-4.04-1.61A3.18 3.18 0 0 0 3.63 17.8c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.56 2.56 0 0 0 3.5 1 2.56 2.56 0 0 1 .76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 0 1 .82 2.22l-.01 3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg>
-              Source Code
-            </a>
+            <a href="https://github.com/Rikith05/n8n-weather-email" target="_blank" rel="noopener" class="btn btn-sm">n8n Repo</a>
+            <a href="https://github.com/Rikith05/ipl-2025-qualifier-simulator" target="_blank" rel="noopener" class="btn btn-sm">IPL Repo</a>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
 
       <div class="projects-more">
-        <a href="https://github.com/Rikith05?tab=repositories" target="_blank" class="btn btn-ghost">
-          View All Repositories →
+        <a href="https://github.com/Rikith05?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost">
+          View All Repositories on GitHub →
         </a>
       </div>
     </div>
@@ -335,7 +407,7 @@
   <section id="skills" class="section skills">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">03</span>
+        <span class="section-tag">05</span>
         <h2 class="section-title">Technical Arsenal</h2>
         <div class="section-line"></div>
       </div>
@@ -346,15 +418,7 @@
           </div>
           <h3>AI &amp; Agent Systems</h3>
           <div class="skill-chips">
-            <span>Multi-Agent DAGs</span>
-            <span>Tool Policy Firewalls</span>
-            <span>LangChain</span>
-            <span>CrewAI</span>
-            <span>RAG Pipelines</span>
-            <span>FAISS</span>
-            <span>Qdrant</span>
-            <span>LLM Fine-Tuning</span>
-            <span>Prompt Engineering</span>
+            <span>Multi-Agent DAGs</span><span>Tool Policy Firewalls</span><span>LangChain</span><span>CrewAI</span><span>RAG Pipelines</span><span>FAISS</span><span>Qdrant</span><span>LLM Fine-Tuning</span><span>Prompt Engineering</span>
           </div>
         </div>
         <div class="skill-category" data-reveal>
@@ -363,15 +427,7 @@
           </div>
           <h3>Machine Learning &amp; CV</h3>
           <div class="skill-chips">
-            <span>PyTorch</span>
-            <span>TensorFlow</span>
-            <span>Scikit-learn</span>
-            <span>YOLOv8</span>
-            <span>MediaPipe</span>
-            <span>OpenCV</span>
-            <span>Pandas</span>
-            <span>NumPy</span>
-            <span>Streamlit</span>
+            <span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>YOLOv8</span><span>MediaPipe</span><span>OpenCV</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span>
           </div>
         </div>
         <div class="skill-category" data-reveal>
@@ -380,15 +436,7 @@
           </div>
           <h3>Full-Stack &amp; Backend</h3>
           <div class="skill-chips">
-            <span>Java 17</span>
-            <span>Spring Boot</span>
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>Node.js</span>
-            <span>REST APIs</span>
-            <span>MySQL</span>
-            <span>SQLite</span>
-            <span>Docker</span>
+            <span>Java 17</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>Node.js</span><span>REST APIs</span><span>MySQL</span><span>SQLite</span><span>Docker</span>
           </div>
         </div>
         <div class="skill-category" data-reveal>
@@ -397,14 +445,7 @@
           </div>
           <h3>DevOps &amp; Tools</h3>
           <div class="skill-chips">
-            <span>Git / GitHub</span>
-            <span>GitHub Actions CI</span>
-            <span>Docker Compose</span>
-            <span>n8n Workflows</span>
-            <span>Power BI</span>
-            <span>Kafka</span>
-            <span>Ollama</span>
-            <span>Postman</span>
+            <span>Git / GitHub</span><span>GitHub Actions CI</span><span>Docker Compose</span><span>n8n Workflows</span><span>Power BI</span><span>Kafka</span><span>Ollama</span><span>Postman</span>
           </div>
         </div>
       </div>
@@ -415,15 +456,15 @@
   <section id="playground" class="section playground">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">04</span>
+        <span class="section-tag">06</span>
         <h2 class="section-title">Live Agent Lab &amp; Firewall Sandbox</h2>
         <div class="section-line"></div>
       </div>
-      <p class="section-desc">Two interactive client-side engines: test SwarmForge's 5-layer tool policy firewall with 1-click attack payloads, or run the Grounded Agent Role Fit Auditor against any Job Description.</p>
+      <p class="section-desc">Interactive client-side engines: test SwarmForge's 5-layer tool policy firewall (<span class="text-emerald">ALLOW</span>, <span class="text-amber">REDACT</span>, <span class="text-rose">BLOCK</span>) or run the Grounded Agent Role Fit Auditor.</p>
 
-      <div class="lab-tabs">
-        <button class="lab-tab active" data-lab="firewall">5-Layer Policy Firewall</button>
-        <button class="lab-tab" data-lab="matcher">AI Concierge &amp; JD Fit Auditor</button>
+      <div class="lab-tabs" role="tablist">
+        <button class="lab-tab active" data-lab="firewall" role="tab" aria-selected="true">5-Layer Policy Firewall</button>
+        <button class="lab-tab" data-lab="matcher" role="tab" aria-selected="false">AI Concierge &amp; JD Fit Auditor</button>
       </div>
 
       <div id="lab-firewall" class="lab-panel active">
@@ -437,6 +478,13 @@
         </div>
         <div class="playground-grid">
           <div class="playground-input">
+            <div class="playground-field">
+              <label for="pg-mode">Policy Mode</label>
+              <select id="pg-mode" class="input">
+                <option value="strict" selected>strict (block secrets &amp; violations)</option>
+                <option value="balanced">balanced (redact secrets, block attacks)</option>
+              </select>
+            </div>
             <div class="playground-field">
               <label for="pg-role">Agent Role</label>
               <select id="pg-role" class="input">
@@ -461,15 +509,15 @@
               <label for="pg-args">Tool Arguments (JSON)</label>
               <textarea id="pg-args" class="input input-textarea" rows="4" spellcheck="false">{"path": "app/main.py", "detail": "functions"}</textarea>
             </div>
-            <button id="pg-run" class="btn btn-primary btn-full">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              Evaluate Through Firewall
-            </button>
+            <div class="btn-row">
+              <button id="pg-run" class="btn btn-primary btn-full">Evaluate Firewall</button>
+              <button id="pg-reset" type="button" class="btn btn-ghost">Reset Breaker</button>
+            </div>
           </div>
-          <div class="playground-output" id="pg-output">
+          <div class="playground-output" id="pg-output" aria-live="polite">
             <div class="pg-placeholder">
               <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <p>Pick a preset or click <strong>Evaluate</strong> to test all 5 firewall layers</p>
+              <p>Pick a preset or click <strong>Evaluate Firewall</strong> to test all 5 layers</p>
             </div>
           </div>
         </div>
@@ -477,7 +525,7 @@
 
       <div id="lab-matcher" class="lab-panel">
         <div class="preset-bar">
-          <span class="preset-label">Role Presets:</span>
+          <span class="preset-label">Role &amp; Q&amp;A Presets:</span>
           <button class="preset-btn" data-jd="agent_engineer">AI Agent Engineer</button>
           <button class="preset-btn" data-jd="llm_eval">LLM Post-Training &amp; Eval</button>
           <button class="preset-btn" data-jd="cv_automation">CV &amp; Automation Engineer</button>
@@ -486,14 +534,14 @@
           <div class="playground-input">
             <div class="playground-field">
               <label for="jd-input">Paste Job Description or Ask About Rikith</label>
-              <textarea id="jd-input" class="input input-textarea" rows="7" placeholder="Paste a JD or ask: e.g. 'How does Rikith prevent agent tool hallucinations?'"></textarea>
+              <textarea id="jd-input" class="input input-textarea" rows="7" placeholder="Paste a JD or ask: e.g. 'What is Rikith's B.Tech CGPA and AI agent experience?'"></textarea>
             </div>
             <button id="jd-run" class="btn btn-primary btn-full">Run Grounded Agent Audit</button>
             <button id="jd-copy" class="btn btn-ghost btn-full" disabled>Copy Markdown Recruiter Brief</button>
           </div>
-          <div class="playground-output" id="jd-output">
+          <div class="playground-output" id="jd-output" aria-live="polite">
             <div class="pg-placeholder">
-              <p>Select a role preset or paste any Job Description to run a grounded citation audit across Rikith's GitHub repos &amp; internships.</p>
+              <p>Select a role preset or paste any Job Description to run a grounded citation audit across Rikith's GitHub repos, studies &amp; internships.</p>
             </div>
           </div>
         </div>
@@ -505,14 +553,15 @@
   <section id="contact" class="section contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">05</span>
+        <span class="section-tag">07</span>
         <h2 class="section-title">Get In Touch</h2>
         <div class="section-line"></div>
       </div>
       <div class="contact-grid">
         <div class="contact-text">
-          <p>Interested in building autonomous agent systems or multi-agent AI infrastructure? Let's talk.</p>
-          <p>I'm open to full-time roles, collaborations, and challenging AI engineering projects.</p>
+          <p>Interested in building autonomous agent systems, RAG pipelines, or reliable AI infrastructure? Let's connect.</p>
+          <p>Open to full-time AI/ML &amp; Agent Engineering roles, collaborations, and challenging systems problems.</p>
+          <button type="button" id="copy-email" class="btn btn-ghost btn-sm" style="margin-top:8px">Copy Email Address</button>
         </div>
         <div class="contact-links">
           <a href="mailto:rikithmadimala05@gmail.com" class="contact-card">
@@ -543,11 +592,19 @@
     </div>
   </section>
 
+  <!-- ═══════════════ COMMAND PALETTE ═══════════════ -->
+  <div id="cmd-modal" class="cmd-modal" hidden aria-hidden="true">
+    <div class="cmd-dialog" role="dialog" aria-label="Quick Command Palette">
+      <input type="text" id="cmd-input" class="cmd-input" placeholder="Type to jump (e.g. studies, swarmforge, firewall, jd)…" autocomplete="off" />
+      <div id="cmd-list" class="cmd-list"></div>
+    </div>
+  </div>
+
   <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer class="footer">
     <div class="container footer-inner">
       <p>Designed &amp; built by <strong>Rikith Madimala</strong> — 2026</p>
-      <p class="footer-sub">Multi-Agent Systems · Policy Firewalls · RAG · Computer Vision</p>
+      <p class="footer-sub" id="footer-sync">Multi-Agent Systems · Policy Firewalls · RAG · Computer Vision</p>
     </div>
   </footer>
 
